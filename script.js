@@ -135,7 +135,7 @@ function showHighScores(highScores){
     }else{
     for(i = 0; i < highScores.length; i++){
         var scoreItem = document.createElement("li");
-        scoreItem.innerHTML= highScores[i].initials + "   -    " + highScores[i].userScore;
+        scoreItem.innerHTML= highScores[i].initials + "   -   " + highScores[i].userScore;
         highScoreModal.append(scoreItem);
       }}
 }
@@ -262,7 +262,6 @@ var myQuestions = [
         correctAnswer: "c"
       },
   ];
-
 
   getHighScores();
   startButton.addEventListener("click", startQuiz);
